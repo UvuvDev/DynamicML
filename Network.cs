@@ -1,11 +1,17 @@
 
 using System.Numerics;
+using System.Collections.Generic;
+using System.ComponentModel;
 
-public class Network<N> where N : struct {
+public class Network {
 
-    protected Vector<Vector<N>> neuronLayers;
+    private Neuron[,] neuronLayers;
 
-    public Network(Vector<Vector<N>> neuronLayers) {
+    public Network(Neuron[,] neuronLayers) {
         this.neuronLayers = neuronLayers;
+    }
+
+    public float computeOuput() {
+        return neuronLayers[0,2].computeOuput();
     }
 }
