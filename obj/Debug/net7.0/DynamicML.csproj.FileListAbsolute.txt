@@ -1,0 +1,15 @@
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.csproj.AssemblyReference.cache
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.AssemblyInfoInputs.cache
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.AssemblyInfo.cs
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.csproj.CoreCompileInputs.cache
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\bin\Debug\net7.0\DynamicML.exe
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\bin\Debug\net7.0\DynamicML.deps.json
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\bin\Debug\net7.0\DynamicML.runtimeconfig.json
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\bin\Debug\net7.0\DynamicML.dll
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\bin\Debug\net7.0\DynamicML.pdb
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.dll
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\refint\DynamicML.dll
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.pdb
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\DynamicML.genruntimeconfig.cache
+C:\Users\Mavericks\Desktop\Personal\DynamicML\DynamicML\obj\Debug\net7.0\ref\DynamicML.dll
