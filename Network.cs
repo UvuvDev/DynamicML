@@ -2,6 +2,8 @@
 using System.Numerics;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Text.Json.Serialization;
+
 
 public class Network {
 
@@ -12,7 +14,9 @@ public class Network {
     }
 
     public float computeOuput() {
-        return neuronLayers[0,2].computeOuput((float) => {return (0,0);}
-        );
+
+        List<float> inputs = new List<float>();
+        return neuronLayers[0,2].computeOuput(inputs);
+        
     }
 }
