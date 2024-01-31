@@ -12,6 +12,7 @@ public class Network {
     }
 
     public float computeOuput() {
-        return neuronLayers[0,2].computeOuput();
+        return neuronLayers[0,2].computeOuput((float) => {return (0,0);}
+        );
     }
 }

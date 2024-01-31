@@ -6,10 +6,10 @@ public class Neuron {
     protected Vector<float> weights;
     protected float bias;
 
-    public Neuron(Vector<float> weights) {
+    public Neuron(Vector<float> weights, float bias = 1) {
         this.weights = weights;
     }
-    public float computeOuput() {
+    public float computeOuput(Vector<float> inputs) {
 
         return 0;
     }
@@ -18,8 +18,11 @@ public class Neuron {
         this.weights = weights;
     }
 
-    public float runActivationFunction() {
-        return 0;
+    public float runActivationFunction(Func<float, float> activationFunction) {
+        
+        float sum = this.summation();
+        
+        return activationFunction(sum);
     }
 
     public float summation() {
