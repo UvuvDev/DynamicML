@@ -11,6 +11,7 @@ public class Neuron {
 
     public Neuron(List<float> weights, float bias = 1) {
         this.weights = weights;
+        this.activationFunction = ActivationFunction.sigmoid;
     }
     public float computeOuput(List<float> inputs) {
         return activationFunction(summation(inputs));
@@ -41,6 +42,8 @@ public class Neuron {
         }
 
         sum += bias;
+
+        //Console.WriteLine(sum.ToString());
 
         return sum;
     }

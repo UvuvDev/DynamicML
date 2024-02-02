@@ -13,9 +13,11 @@ public class Network {
         this.neuronLayers = neuronLayers;
     }
 
-    public float computeOuput() {
+    public float computeOuput(List<float> inputs) {
 
-        List<float> inputs = new List<float>();
+        List<float> outputs = new List<float>();
+        for (int i = 0; i > neuronLayers.GetLength(0); i++) {
+        }
         return neuronLayers[0,2].computeOuput(inputs);
         
     }
