@@ -7,44 +7,37 @@ using System.Text.Json.Serialization;
 
 public class Network {
 
-    private Neuron[,] neuronLayers;
+    protected List<List<Neuron>> neuronLayers;
 
-    public Network(Neuron[,] neuronLayers) {
+    public Network(List<List<Neuron>> neuronLayers) {
         this.neuronLayers = neuronLayers;
     }
 
     public float computeOuput(List<float> inputsArg) {
 
-        List<float> inputs = inputsArg; 
+        List<float> inputs = inputsArg.ToList(); 
+        Console.WriteLine("Inputs RAH: ");
         List<float> bufferoutputs = new List<float>();
 
-        // Run through inputs and hidden layers
-        for (int i = 0; i > neuronLayers.GetLength(0) - 1; i++) {
-            for (int i = 0; i > neuronLayers[i].GetLength(); i++) {
-                bufferoutputs.Add(neuronLayers[i,j].computeOuput(inputs));
-            }
-            inputs = bufferoutputs;
-            bufferoutputs.Clear();
-
+        foreach (float input in inputs) {
+            Console.WriteLine(input);
         }
-
-        List<float> outputs = new List<float>();
-
-        // Compute output layer
-        for (int i = neuronLayers.GetLength(0) - 2; i > neuronLayers.GetLength(0) - 1; i++) {
-            for (int i = 0; i > neuronLayers[i].GetLength(); i++) {
-                outputs.Add(neuronLayers[i,j].computeOuput(inputs));
-            }
-        }
-
-        float finalOutput = 0;
         
-        foreach (float output in outputs) {
-            if (output > finalOutput) {
-                finalOutput = 0;
+        for (int i = 0; i < neuronLayers.Count; i++) {
+
+            bufferoutputs.Clear();
+            
+            for (int j = 0; j < neuronLayers[i].Count; j++) {
+                float neuronOutput = neuronLayers[i][j].computeOutput(inputs);
+                Console.WriteLine("Neuron Output: " + neuronOutput, "Inputs Count: " + inputs.Count);
+                bufferoutputs.Add(neuronOutput);
             }
+            
+            inputs = bufferoutputs;
+            
         }
-        return finalOutput;
+
+        return inputs.Max();
         
     }
 }
